@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/cifrinha-de-cesar.css">
+    <script src="./js/cifrinha-de-cesar.js"></script>
+    <title>Criptografia</title>
+</head>
+
+<body>
+    <div class="corpo">
+    <form>
+        <div><br>
+            <label for="insercao">Digite a mensagem aqui ⇩ </label><br>
+            <textarea cols="35" rows="5" type="text" id="insercao" required></textarea><br>
+            <label>Escolha um código ⇩</label><br>
+         </div>   
+
+            <div id="codigos">
+                <input type="radio" id="Cifra" class= "tipodecodigo" onclick="habilitaEntrada()" name="Cifra" value="Cifra" checked>
+                <label for="codificar">Cifra de César</label>
+                <input type="radio" id="base" class= "tipodecodigo"  onclick="desabilitaEntrada()" name="Base" value="Base">
+                <label for="Codificar">Base 64</label>
+                <br>
+                <br>
+            </div>
+            <br>
+
+            <div id="entradaPrincipal"style="">
+                <label for="Principal">Coloque uma entrada:</label><br>
+                <input type="text" id="principal" name="ChaveCesar"><br>
+            </div>
+
+        <div id="Traducao">
+            <input type="radio" id="codificar" onclick="criptografia()" name="Codificações" value="Codificar" checked>
+            <label for="codificar">Codificar</label>
+            <input type="radio" id="decodificar" onclick="descriptografia()"  name="Codificações" value="Codificar">
+            <label for="Codificar">Decodificar</label>
+            <br>
+            <br>
+        </div><br>
+    </form>
+
+    <div>
+        <button  id="botao"><p id="resultadofinal">Nova Mensagem</p></button><br>
+        <p id="Traducao">Resultado ⇩</p>
+        <textarea cols="35" rows="5" type="text" id="resultado"></textarea><br>
+    </div>
+</div>
+</body>
+</html>
