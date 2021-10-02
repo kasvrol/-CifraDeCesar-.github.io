@@ -59,12 +59,14 @@ input{
 input, textarea, button{
     border-color: rgb(5, 83, 5);
     margin: 5px 0 5px 0;
+    color: rgb(5, 83, 5);
 }
 button{
     background-color: rgb(5, 83, 5);
     font-family: 'Roboto Mono', monospace;
     padding: 2% 0 2% 0;
     font-size: 16px;
+    color: black;
 }
 .mensagem{
     height: 90%;
